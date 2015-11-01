@@ -94,7 +94,7 @@ msgstr "Susiję įrašai"
 
 #: templates/blog/blog_post_list.html:4 templates/blog/blog_post_list.html:22
 msgid "Blog"
-msgstr "Tinklaraštis"
+msgstr "Įkelti darbai"
 
 #: templates/blog/blog_post_list.html:31
 msgid "Tag:"
