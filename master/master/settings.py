@@ -126,7 +126,7 @@ SITE_ID = 1
 
 # If you set this to False, Django will make some optimizations so as not
 # to load the internationalization machinery.
-USE_I18N = False
+USE_I18N = True
 
 AUTHENTICATION_BACKENDS = ("mezzanine.core.auth_backends.MezzanineBackend",)
 
@@ -324,3 +324,6 @@ SITE_TITLE = "Yogamin"
 SITE_TAGLINE = "Karolio Ryselio magistro darbas"
 
 ACCOUNTS_VERIFICATION_REQUIRED = True
+LOCALE_PATHS = (
+    os.path.join(PROJECT_ROOT, "locale"),
+)

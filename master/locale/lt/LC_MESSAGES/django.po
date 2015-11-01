@@ -8,7 +8,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
 "Report-Msgid-Bugs-To: \n"
-"POT-Creation-Date: 2015-10-10 19:00+0300\n"
+"POT-Creation-Date: 2015-11-01 19:24+0200\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -31,26 +31,26 @@ msgstr "Lietuvių"
 msgid "Toggle Navigation"
 msgstr "Perjungti navigaciją"
 
-#: templates/base.html:133
+#: templates/base.html:124
 msgid "Powered by"
 msgstr "Veikia su"
 
-#: templates/base.html:136
+#: templates/base.html:127
 msgid "and"
 msgstr "ir"
 
-#: templates/base.html:139
+#: templates/base.html:130
 msgid "Theme by"
 msgstr "Tema iš"
 
-#: templates/base.html:142
+#: templates/base.html:133
 msgid "View Mobile Site"
 msgstr "Perjungti į mobilujį puslapį"
 
 #: templates/blog/blog_post_detail.html:29
 #: templates/blog/blog_post_list.html:85
 msgid "Posted by"
-msgstr ""
+msgstr "Sukūrė"
 
 #: templates/blog/blog_post_detail.html:33
 #: templates/blog/blog_post_list.html:97
@@ -58,71 +58,71 @@ msgstr ""
 #: templates/generic/includes/comment.html:59 templates/twitter/tweets.html:19
 #, python-format
 msgid "%(sometime)s ago"
-msgstr ""
+msgstr "prieš %(sometime)s"
 
 #: templates/blog/blog_post_detail.html:43
 #: templates/blog/blog_post_list.html:136
 #: templates/generic/includes/comments.html:3
 msgid "Comments"
-msgstr ""
+msgstr "Komentarai"
 
 #: templates/blog/blog_post_detail.html:46
 #: templates/blog/blog_post_list.html:140
 #, python-format
 msgid "%(comments_count)s comment"
 msgid_plural "%(comments_count)s comments"
-msgstr[0] ""
-msgstr[1] ""
+msgstr[0] "%(comments_count)s komentaras"
+msgstr[1] "%(comments_count)s komentarai"
 
 #: templates/blog/blog_post_detail.html:74
 #: templates/blog/blog_post_list.html:121
 #: templates/blog/includes/filter_panel.html:56
 msgid "Tags"
-msgstr ""
+msgstr "Žymos"
 
 #: templates/blog/blog_post_detail.html:93
 msgid "Share on Twitter"
-msgstr ""
+msgstr "Pasidalinti Twitter"
 
 #: templates/blog/blog_post_detail.html:94
 msgid "Share on Facebook"
-msgstr ""
+msgstr "Pasidalinti Facebook"
 
 #: templates/blog/blog_post_detail.html:119
 msgid "Related posts"
-msgstr ""
+msgstr "Susiję įrašai"
 
 #: templates/blog/blog_post_list.html:4 templates/blog/blog_post_list.html:22
 msgid "Blog"
-msgstr ""
+msgstr "Tinklaraštis"
 
 #: templates/blog/blog_post_list.html:31
 msgid "Tag:"
-msgstr ""
+msgstr "Žyma:"
 
 #: templates/blog/blog_post_list.html:33
 msgid "Category:"
-msgstr ""
+msgstr "Kategorija:"
 
 #: templates/blog/blog_post_list.html:37
 msgid "Author:"
-msgstr ""
+msgstr "Autorius:"
 
 #: templates/blog/blog_post_list.html:50
 msgid "Viewing posts tagged"
-msgstr ""
+msgstr "Peržiūrima įrašus su žyma"
 
 #: templates/blog/blog_post_list.html:52
 msgid "Viewing posts for the category"
-msgstr ""
+msgstr "Peržiūrima įrašus kategorijoje"
 
 #: templates/blog/blog_post_list.html:54
 msgid "Viewing posts from"
-msgstr ""
+msgstr "Peržiūrima įrašus iš"
 
 #: templates/blog/blog_post_list.html:57
 msgid "Viewing posts by"
-msgstr ""
+msgstr "Peržiūrima įrašus, sukurtus"
 
 #: templates/blog/blog_post_list.html:91
 msgid "in"
@@ -130,45 +130,27 @@ msgstr ""
 
 #: templates/blog/blog_post_list.html:130 templates/search_results.html:47
 msgid "read more"
-msgstr ""
+msgstr "skaityti daugiau"
 
 #: templates/blog/includes/filter_panel.html:6
 msgid "Recent Posts"
-msgstr ""
+msgstr "Naujausi įrašai"
 
 #: templates/blog/includes/filter_panel.html:27
 msgid "Archive"
-msgstr ""
+msgstr "Archyvas"
 
 #: templates/blog/includes/filter_panel.html:43
 msgid "Categories"
-msgstr ""
+msgstr "Kategorijos"
 
 #: templates/blog/includes/filter_panel.html:72
 msgid "Authors"
-msgstr ""
-
-#: templates/blog/includes/filter_panel.html:84
-msgid "Feeds"
-msgstr ""
-
-#: templates/blog/includes/filter_panel.html:86
-#: templates/blog/includes/filter_panel.html:90
-#: templates/blog/includes/filter_panel.html:94
-#: templates/blog/includes/filter_panel.html:98
-msgid "RSS"
-msgstr ""
-
-#: templates/blog/includes/filter_panel.html:87
-#: templates/blog/includes/filter_panel.html:91
-#: templates/blog/includes/filter_panel.html:95
-#: templates/blog/includes/filter_panel.html:99
-msgid "Atom"
-msgstr ""
+msgstr "Autoriai"
 
 #: templates/email/comment_notification.html:6
 msgid "A new comment has been posted on"
-msgstr ""
+msgstr "Naujas komentaras paskelbtas"
 
 #: templates/email/comment_notification.html:10
 #, python-format
@@ -177,6 +159,9 @@ msgid ""
 "    At %(submit_date)s %(user_name)s wrote:\n"
 "    "
 msgstr ""
+"\n"
+"    %(submit_date)s %(user_name)s rašė:\n"
+"    "
 
 #: templates/email/comment_notification.txt:7
 #, python-format
@@ -184,113 +169,130 @@ msgid ""
 "\n"
 "At %(submit_date)s %(user_name)s wrote:\n"
 msgstr ""
+"\n"
+"%(submit_date)s %(user_name)s rašė:\n"
 
 #: templates/errors/404.html:6 templates/errors/404.html.py:10
 #: templates/errors/404.html:15
 msgid "Page not found"
-msgstr ""
+msgstr "Puslapis nerastas"
 
 #: templates/errors/404.html:16
 msgid "The page you requested does not exist."
-msgstr ""
+msgstr "Puslapis, kurio ieškote, nerastas."
 
 #: templates/errors/500.html:6 templates/errors/500.html.py:10
 #: templates/errors/500.html:15
 msgid "Error"
-msgstr ""
+msgstr "Klaida"
 
 #: templates/errors/500.html:16
 msgid "Sorry, an error occurred."
-msgstr ""
+msgstr "Atsiprašome, įvyko klaida."
 
 #: templates/generic/includes/comment.html:30
 msgid "Link"
-msgstr ""
+msgstr "Nuoroda"
 
 #: templates/generic/includes/comment.html:33
 #: templates/generic/includes/comment.html:49
 msgid "Reply"
-msgstr ""
+msgstr "Atsakyti"
 
 #: templates/generic/includes/comment.html:55
 msgid "Comment deleted"
-msgstr ""
+msgstr "Komentaras ištrintas"
 
 #: templates/generic/includes/comment.html:57
 msgid "Comment awaiting approval"
-msgstr ""
+msgstr "Komentaras laukia patvirtinimo"
 
 #: templates/generic/includes/comment.html:71
 msgid "There are currently no comments"
-msgstr ""
+msgstr "Šiuo metu nėra komentarų"
 
 #: templates/generic/includes/comments.html:17
 msgid "New Comment"
-msgstr ""
+msgstr "Naujas komentaras"
 
 #: templates/generic/includes/comments.html:25
 msgid "Comment"
-msgstr ""
+msgstr "Komentuoti"
 
 #: templates/generic/includes/rating.html:5
 msgid "Current rating"
-msgstr ""
+msgstr "Dabartinis įvertis"
 
 #: templates/generic/includes/rating.html:7
 msgid "Currently unrated"
-msgstr ""
+msgstr "Šiuo metu neįvertinta"
 
 #: templates/generic/includes/rating.html:17
 msgid "Rate"
-msgstr ""
+msgstr "Įvertinti"
+
+#: templates/includes/accounts_user_panel.html:5
+msgid "Logged in as: "
+msgstr "Prisijungęs kaip:"
+
+#: templates/includes/accounts_user_panel.html:11
+msgid "Update profile"
+msgstr "Atnaujinti profilį"
+
+#: templates/includes/accounts_user_panel.html:17
+#: templates/includes/editable_toolbar.html:9
+msgid "Log out"
+msgstr "Atsijungti"
+
+#: templates/includes/accounts_user_panel.html:20
+#, fuzzy
+#| msgid "Log out"
+msgid "Log in"
+msgstr "Atsijungti"
 
 #: templates/includes/editable_form.html:16
 msgid "Save"
-msgstr ""
+msgstr "Išsaugoti"
 
 #: templates/includes/editable_form.html:17
 msgid "Cancel"
-msgstr ""
+msgstr "Atšaukti"
 
 #: templates/includes/editable_form.html:25
 msgid "Edit"
-msgstr ""
+msgstr "Redaguoti"
 
 #: templates/includes/editable_toolbar.html:8
 msgid "Admin"
-msgstr ""
-
-#: templates/includes/editable_toolbar.html:9
-msgid "Log out"
-msgstr ""
+msgstr "Administravimas"
 
 #: templates/includes/form_errors.html:8
 msgid "Please correct the errors below."
-msgstr ""
+msgstr "Ištaisykite klaidas."
 
 #: templates/includes/language_selector.html:19
 msgid "Change"
-msgstr ""
+msgstr "Pakeisti"
 
 #: templates/includes/pagination.html:7
 msgid "Page"
-msgstr ""
+msgstr "Puslapis"
 
 #: templates/includes/pagination.html:7
 msgid "of"
-msgstr ""
+msgstr "iš"
 
 #: templates/includes/search_form.html:5
 msgid "Search"
-msgstr ""
+msgstr "Paieška"
 
 #: templates/includes/search_form.html:14
 msgid "Everything"
-msgstr ""
+msgstr "Viskas"
 
 #: templates/includes/search_form.html:26
 msgid "Go"
-msgstr ""
+msgstr "Eiti"
 
 #: templates/index.html:4 templates/index.html.py:5 templates/index.html:8
 #: templates/pages/menus/breadcrumb.html:4
@@ -300,46 +302,36 @@ msgstr ""
 #: templates/pages/menus/mobile.html:10 templates/pages/menus/primary.html:8
 #: templates/pages/menus/tree.html:9 templates/search_results.html:13
 msgid "Home"
-msgstr ""
+msgstr "Pradinis"
 
 #: templates/index.html:12
 msgid ""
 "\n"
-"<h2>Congratulations!</h2>\n"
+"<h2>Yogamin</h2>\n"
 "<p>\n"
-"    Welcome to your new Mezzanine powered website.\n"
-"    Here are some quick links to get you started:\n"
+"    Sveiki atvykę! Šiame puslapyje pateikiama informacija apie Karolio "
+"Ryselio magistro darbą tema „Žmogaus pozų atpažinimo algoritmo ir jį\n"
+"realizuojančios programinės įrangos sukūrimas, algoritmo tikslumo tyrimas "
+"ir\n"
+"pritaikymas jogos žaidime <strong>Yogamin</strong>“.\n"
 "</p>\n"
 "<ul>\n"
-"    <li><a href=\"/admin/\">Log in to the admin interface</a></li>\n"
-"    <li><a href=\"http://mezzanine.jupo.org/docs/content-architecture.html"
-"\">Creating custom page types</a></li>\n"
-"    <li><a href=\"http://mezzanine.jupo.org/docs/frequently-asked-questions."
-"html#templates\">Modifying HTML templates</a></li>\n"
-"    <li><a href=\"http://mezzanine.jupo.org/docs/frequently-asked-questions."
-"html#why-isn-t-the-homepage-a-page-object-i-can-edit-via-the-admin"
-"\">Changing this homepage</a></li>\n"
-"    <li><a href=\"http://mezzanine.jupo.org/docs/frequently-asked-questions."
-"html\">Other frequently asked questions</a></li>\n"
-"    <li><a href=\"http://mezzanine.jupo.org/docs/configuration.html#default-"
-"settings\">Full list of settings</a></li>\n"
-"    <li><a href=\"http://mezzanine.jupo.org/docs/deployment.html\">Deploying "
-"to a production server</a></li>\n"
+"\n"
 "</ul>\n"
 msgstr ""
 
 #: templates/pages/form.html:24
 msgid "Submit"
-msgstr ""
+msgstr "Pateikti"
 
 #: templates/pages/menus/admin.html:31
 msgid "Add"
-msgstr ""
+msgstr "Pridėti"
 
 #: templates/search_results.html:5 templates/search_results.html.py:6
 #: templates/search_results.html:15
 msgid "Search Results"
-msgstr ""
+msgstr "Paieškos rezultatai"
 
 #: templates/search_results.html:22
 #, python-format
@@ -347,6 +339,8 @@ msgid ""
 "\n"
 "No results were found in %(search_type)s matching your query: %(query)s\n"
 msgstr ""
+"\n"
+"Rezultatų paieškai %(search_type)s nerasta. Jūsų užklausa: %(query)s\n"
 
 #: templates/search_results.html:26
 #, python-format
@@ -355,7 +349,19 @@ msgid ""
 "Showing %(start)s to %(end)s of %(total)s results in %(search_type)s "
 "matching your query: %(query)s\n"
 msgstr ""
+"\n"
+"Rodoma nuo %(start)s iki %(end)s iš %(total)s rezultatų %(search_type)s "
+"užklausai: %(query)s\n"
 
 #: templates/twitter/tweets.html:7
 msgid "Recent Tweets"
-msgstr ""
+msgstr "Naujausi įrašai"
+
+#~ msgid "Feeds"
+#~ msgstr "Sklaidos kanalai"
+
+#~ msgid "RSS"
+#~ msgstr "RSS"
+
+#~ msgid "Atom"
+#~ msgstr "Atom"
